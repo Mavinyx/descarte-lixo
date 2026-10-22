@@ -1,7 +1,8 @@
+import Header from './Header.tsx'
 function App() {
   return (
     <>
-    <button>botao teste</button>
+    <Header />
     </>
   )
 }
