@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ecoponto-mathias-velho",
+    "nome": "Ecoponto Espumoso",
+    "endereco": "Rua Espumoso, 315",
+    "bairro": "Mathias Velho",
+    "bairrosProximos": ["Mathias Velho", "Harmonia", "Centro", "Mato Grande", "São Luís"],
+    "materiaisAceitos": ["entulho-obra", "madeira", "papel-papelao", "plastico", "vidro", "metal"],
+    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h"
+  },
+  {
+    "id": "ecoponto-sudeste",
+    "nome": "Ecoponto Niterói",
+    "endereco": "Rua Paulo Fonteles, 1560",
+    "bairro": "Niterói",
+    "bairrosProximos": ["Niterói", "Marechal Rondon", "Harmonia", "Fátima"],
+    "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "madeira", "entulho-obra"],
+    "horario": "Segunda a sexta, das 08h às 12h e das 13h às 17h; Sábado, das 08h às 12h; Domingo e feriado: fechado"
+  },
+  {
+    "id": "ecoponto-rio-branco",
+    "nome": "Ecoponto Rio Branco",
+    "endereco": "Rua Hermes da Fonseca, 1770",
+    "bairro": "Rio Branco",
+    "bairrosProximos": ["Rio Branco", "Fátima", "Niterói", "Centro"],
+    "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "madeira"],
+    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h"
+  },
+  {
+    "id": "ecoponto-nazario",
+    "nome": "Ecoponto Nazário",
+    "endereco": "Estrada Passo do Nazário (Acesso ao Aterro Sanitário)",
+    "bairro": "Guajuviras",
+    "bairrosProximos": ["Guajuviras", "Estância Velha"],
+    "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "entulho-obra"],
+    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h"
+  },
+  {
+    "id": "ecoponto-esperanca",
+    "nome": "Ecoponto Esperança",
+    "endereco": "Avenida Esperança, 1346",
+    "bairro": "Igara",
+    "bairrosProximos": ["Igara", "Guajuviras", "São José"],
+    "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "madeira", "entulho-obra"],
+    "horario": "Segunda a sexta, das 08h às 12h e das 13h às 17h; Sábado, das 08h às 12h; Domingo e feriado: fechado"
+  },
+  {
+    "id": "ifrs-campus-canoas",
+    "nome": "IFRS - Campus Canoas",
+    "endereco": "Rua Dra. Maria Zélia Carneiro de Figueiredo, 870",
+    "bairro": "Igara",
+    "bairrosProximos": ["Igara", "Guajuviras", "São José"],
+    "materiaisAceitos": ["eletronicos", "papel-papelao", "plastico", "metal"],
+    "horario": "Dias úteis, em horário comercial/acadêmico"
+  },
+  {
+    "id": "ponto-reciclus-centro",
+    "nome": "Ponto de Coleta Reciclus",
+    "endereco": "Avenida Victor Barreto, 2110",
+    "bairro": "Centro",
+    "bairrosProximos": ["Centro", "Mathias Velho", "Marechal Rondon", "Nossa Senhora das Graças"],
+    "materiaisAceitos": ["eletronicos"],
+    "horario": "Horário comercial do estabelecimento parceiro"
+  },
+  {
+    "id": "ponto-eletronicos-centro",
+    "nome": "Ponto de Coleta Eletrônica - Centro",
+    "endereco": "Rua do Cafeeiro, 120",
+    "bairro": "Centro",
+    "bairrosProximos": ["Centro", "Marechal Rondon"],
+    "materiaisAceitos": ["eletronicos"],
+    "horario": "Segunda a Sexta-feira, das 09h às 18h"
+  },
+  {
+    "id": "sul-coleta",
+    "nome": "SUL COLETA",
+    "endereco": "Rua Novo Hamburgo, 233",
+    "bairro": "Mathias Velho",
+    "bairrosProximos": ["Mathias Velho", "Centro", "Harmonia"],
+    "materiaisAceitos": ["oleo-cozinha", "papel-papelao", "plastico", "metal", "vidro"],
+    "horario": "Horário comercial"
+  },
+  {
+    "id": "secretaria-meio-ambiente",
+    "nome": "Secretaria do Meio Ambiente de Canoas",
+    "endereco": "Rua Monte Castelo, 410",
+    "bairro": "Nossa Senhora das Graças",
+    "bairrosProximos": ["Nossa Senhora das Graças", "Centro", "Marechal Rondon"],
+    "materiaisAceitos": ["residuos-perigosos", "corpo-animal", "entulho-obra"],
+    "horario": "Segunda a Sexta-feira, em horário comercial"
+  },
+  {
+    "id": "aterro-sanitario",
+    "nome": "Aterro Sanitário de Canoas",
+    "endereco": "Estrada Passo do Nazário, s/n",
+    "bairro": "Guajuviras",
+    "bairrosProximos": ["Guajuviras", "Estância Velha"],
+    "materiaisAceitos": ["entulho-obra", "rejeitos", "residuos-perigosos"],
+    "horario": "Segunda a Sábado, das 07h às 18h"
+  }
+]

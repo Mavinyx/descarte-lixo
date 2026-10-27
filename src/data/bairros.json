@@ -1,0 +1,72 @@
+[
+  {
+    "id": "centro",
+    "nome": "Centro",
+    "regiao": "Centro"
+  },
+  {
+    "id": "mathias-velho",
+    "nome": "Mathias Velho",
+    "regiao": "Quadrante Noroeste"
+  },
+  {
+    "id": "harmonia",
+    "nome": "Harmonia",
+    "regiao": "Quadrante Noroeste"
+  },
+  {
+    "id": "sao-luis",
+    "nome": "São Luís",
+    "regiao": "Quadrante Noroeste"
+  },
+  {
+    "id": "niteroi",
+    "nome": "Niterói",
+    "regiao": "Quadrante Sudeste"
+  },
+  {
+    "id": "rio-branco",
+    "nome": "Rio Branco",
+    "regiao": "Quadrante Sudoeste"
+  },
+  {
+    "id": "fatima",
+    "nome": "Fátima",
+    "regiao": "Quadrante Sudoeste"
+  },
+  {
+    "id": "mato-grande",
+    "nome": "Mato Grande",
+    "regiao": "Quadrante Sudoeste"
+  },
+  {
+    "id": "guajuviras",
+    "nome": "Guajuviras",
+    "regiao": "Quadrante Nordeste"
+  },
+  {
+    "id": "estancia-velha",
+    "nome": "Estância Velha",
+    "regiao": "Quadrante Nordeste"
+  },
+  {
+    "id": "marechal-rondon",
+    "nome": "Marechal Rondon",
+    "regiao": "Centro-Norte"
+  },
+  {
+    "id": "igara",
+    "nome": "Igara",
+    "regiao": "Quadrante Nordeste"
+  },
+  {
+    "id": "olaria",
+    "nome": "Olaria",
+    "regiao": "Quadrante Nordeste"
+  },
+  {
+    "id": "sao-jose",
+    "nome": "São José",
+    "regiao": "Quadrante Nordeste"
+  }
+]

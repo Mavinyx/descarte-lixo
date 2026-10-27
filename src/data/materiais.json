@@ -1,0 +1,152 @@
+[
+  {
+    "id": "restos-alimentos",
+    "titulo": "Restos de Alimentos e Orgânicos",
+    "keywords": ["comida", "resto de comida", "casca", "fruta", "semente", "biodegradavel", "po de cafe"],
+    "origem": "Doméstico",
+    "composicao": "Orgânico",
+    "corLixeira": "Marrom",
+    "corHex": "#795548",
+    "orientacao": "Descarte no lixo orgânico doméstico para coleta comum ou compostagem."
+  },
+  {
+    "id": "papel-papelao",
+    "titulo": "Papel e Papelão",
+    "keywords": ["papel", "papelao", "caixa", "folha", "jornal", "revista", "embalagem de papel"],
+    "origem": "Doméstico",
+    "composicao": "Reciclável",
+    "corLixeira": "Azul",
+    "corHex": "#2196F3",
+    "orientacao": "Mantenha limpo e seco. Descarte na coleta seletiva (lixeira azul)."
+  },
+  {
+    "id": "plastico",
+    "titulo": "Garrafas e Embalagens Plásticas",
+    "keywords": ["plastico", "garrafa pet", "embalagem", "sacola", "pote", "tampa"],
+    "origem": "Doméstico",
+    "composicao": "Reciclável",
+    "corLixeira": "Vermelho",
+    "corHex": "#F44336",
+    "orientacao": "Higienize as embalagens e coloque na coleta seletiva (lixeira vermelha)."
+  },
+  {
+    "id": "vidro",
+    "titulo": "Vidros e Garrafas",
+    "keywords": ["vidro", "garrafa de vidro", "pote de vidro", "caco", "frasco"],
+    "origem": "Doméstico",
+    "composicao": "Reciclável",
+    "corLixeira": "Verde",
+    "corHex": "#4CAF50",
+    "orientacao": "Embale bem cacos para evitar acidentes. Descarte no recipiente de vidro (lixeira verde)."
+  },
+  {
+    "id": "metal",
+    "titulo": "Latas e Metais",
+    "keywords": ["metal", "lata", "aluminio", "ferro", "tampa de garrafa", "esquadria"],
+    "origem": "Doméstico",
+    "composicao": "Reciclável",
+    "corLixeira": "Amarelo",
+    "corHex": "#FFEB3B",
+    "orientacao": "Lave e remova resíduos antes de encaminhar à coleta seletiva (lixeira amarela)."
+  },
+  {
+    "id": "madeira",
+    "titulo": "Madeiras e Retalhos",
+    "keywords": ["madeira", "retalho", "ripa", "palete", "galho"],
+    "origem": "Público",
+    "composicao": "Reciclável",
+    "corLixeira": "Preto",
+    "corHex": "#212121",
+    "orientacao": "Pedaços menores vão na lixeira preta. Grandes volumes/móveis devem ir ao Ecoponto."
+  },
+  {
+    "id": "eletronicos",
+    "titulo": "Lixo Eletrônico, Celulares e Computadores",
+    "keywords": ["eletronico", "celular", "computador", "televisao", "tv", "fio", "cabo", "placa", "bateria", "pilha"],
+    "origem": "Doméstico",
+    "composicao": "Eletrônico",
+    "corLixeira": "Laranja",
+    "corHex": "#FF9800",
+    "orientacao": "Não coloque no lixo comum. Entregue em pontos de coleta específicos ou ecopontos."
+  },
+  {
+    "id": "entulho-obra",
+    "titulo": "Restos de Obra e Tijolos (Entulho)",
+    "keywords": ["tijolo", "tijolos", "concreto", "cimento", "argamassa", "entulho", "piso", "ceramica", "azulejo"],
+    "origem": "Público",
+    "composicao": "Rejeitos não recicláveis",
+    "corLixeira": "Cinza",
+    "corHex": "#9E9E9E",
+    "orientacao": "Resíduos da construção civil (até 1m³) devem ser levados a um Ecoponto do município."
+  },
+  {
+    "id": "rejeitos",
+    "titulo": "Rejeitos e Resíduos Não Recicláveis",
+    "keywords": ["papel higienico", "fralda", "absorvente", "espelho", "fita adesiva", "sujo"],
+    "origem": "Doméstico",
+    "composicao": "Rejeito",
+    "corLixeira": "Cinza",
+    "corHex": "#9E9E9E",
+    "orientacao": "Materiais sem possibilidade de reciclagem. Descarte no lixo comum/rejeito."
+  },
+  {
+    "id": "oleo-cozinha",
+    "titulo": "Óleo de Cozinha Usado",
+    "keywords": ["oleo", "oleo de cozinha", "gordura", "oleo vegetal", "fritura"],
+    "origem": "Doméstico / Comercial",
+    "composicao": "Reciclável / Especial",
+    "corLixeira": "Laranja",
+    "corHex": "#FF9800",
+    "orientacao": "Armazene em garrafa PET transparente e bem fechada para entregar nos pontos de coleta."
+  },
+  {
+    "id": "residuos-perigosos",
+    "titulo": "Resíduos Perigosos (Óleos, Tintas e Solventes)",
+    "keywords": ["tinta", "solvente", "agrotoxico", "quimico", "veneno"],
+    "origem": "Industrial",
+    "composicao": "Perigoso",
+    "corLixeira": "Laranja",
+    "corHex": "#FF9800",
+    "orientacao": "Materiais tóxicos/inflamáveis. Requerem descarte especial e empresas licenciadas."
+  },
+  {
+    "id": "hospitalar",
+    "titulo": "Resíduos de Saúde e Medicamentos Vencidos",
+    "keywords": ["seringa", "luva", "bandagem", "curativo", "medicamento", "remedio", "agulha"],
+    "origem": "Hospitalar",
+    "composicao": "Biológico / Infectante",
+    "corLixeira": "Branco",
+    "corHex": "#FFFFFF",
+    "orientacao": "Remédios e perfurocortantes devem ser entregues em farmácias ou postos de saúde."
+  },
+  {
+    "id": "corpo-animal",
+    "titulo": "Carcaças e Animais Mortos",
+    "keywords": ["animal morto", "carcaca", "corpo de animal", "lixo animal", "bicho morto"],
+    "origem": "Corpo de animal",
+    "composicao": "Lixo animal",
+    "corLixeira": "Marrom",
+    "corHex": "#5D4037",
+    "orientacao": "Solicite o recolhimento especial diretamente com a Secretaria de Meio Ambiente / Prefeitura."
+  },
+  {
+    "id": "radioativo",
+    "titulo": "Resíduos Radioativos",
+    "keywords": ["radioativo", "usina", "equipamento medico especifico", "raio x"],
+    "origem": "Industrial",
+    "composicao": "Radioativo",
+    "corLixeira": "Roxo",
+    "corHex": "#9C27B0",
+    "orientacao": "Sujeito a controle e descarte sob rígidas normas da CNEN."
+  },
+  {
+    "id": "espacial",
+    "titulo": "Detritos Espaciais",
+    "keywords": ["espacial", "satelite", "foguete", "equipamento espacial"],
+    "origem": "Espacial",
+    "composicao": "Especial",
+    "corLixeira": "Cinza",
+    "corHex": "#607D8B",
+    "orientacao": "Resíduos sob controle de agências espaciais e acordos internacionais."
+  }
+]
