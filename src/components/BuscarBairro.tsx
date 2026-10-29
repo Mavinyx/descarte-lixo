@@ -1,5 +1,5 @@
 import BairroData from "../data/bairros.json";
-import type Bairro  from "../types/index.ts";
+import type {Bairro}  from "../types/index.ts";
 function BuscarBairro() {
     const bairros: Bairro[] = BairroData as Bairro[];
 return (

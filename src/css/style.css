@@ -14,11 +14,13 @@ body{
     max-width: 100%;
     height: 100vh;
     border: 1px solid var(--default);
+    box-sizing: border-box;
 }
 #root{
     width: 100%;
     height: 100%;
     border: 1px solid red;
+    
 }
 .container{
    border: 1px solid var(--secondary);
@@ -27,5 +29,5 @@ body{
    height: 80%;
    width: 70%;
    justify-self: center;
-   
+   margin-top: 5%;
 }
