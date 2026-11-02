@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <Header />
-    <div className="container">
+    <div className="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4">
       <BuscarBairro />
       <BuscarResiduo />
     </div>
