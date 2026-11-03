@@ -56,9 +56,3 @@ Se você baixou o projeto do GitHub e quer ver o site funcionando no seu navegad
    Segure a tecla `Ctrl` e clique no link azul que aparecer no terminal (ex: `http://localhost:5173/`).
 
 ---
-
-## 📌 Links de Planejamento do Grupo
-
-*   [Quadro de Tarefas no Trello](https://trello.com)
-*   [Desenho Visual do Site no Canva](https://canva.link)
-*   [Organização Geral no Notion](https://notion.com)
