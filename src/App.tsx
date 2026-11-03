@@ -32,7 +32,7 @@ function App() {
       }}
     />
 
-     <div className="flex flex-col items-center justify-center w-full">
+     <div className="flex items-left justify-center w-xs box-sizing-border overflow-hidden m-2 border-2">
         {list.map((ponto) => (
           <CardPontoColeta key={ponto.id} ponto={ponto} />
         ))}
