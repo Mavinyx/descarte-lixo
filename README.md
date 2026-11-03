@@ -31,8 +31,15 @@ Informações completas (endereço e horários de funcionamento) dos 5 Ecopontos
 
 *Nota: O site também avisa o limite de volume aceito (até 2m³) e o que os funcionários não podem receber lá.*
 
-### 📞 Telefones e Links Úteis
-Se o seu lixo for muito específico, reunimos os contatos oficiais da Prefeitura (como o telefone da Central de Atendimento ao Cidadão - 0800 510 1234) e ferramentas parceiras de busca como o EcoPerto e Green Eletron.
+## 🎨 Design e Interface (UX/UI)
+
+O visual do **BetterCanoas** foi planejado no Canva com foco em acessibilidade e clareza visual:
+* **Paleta ecológica:** Cores baseadas em tons de verde e cinza para remeter à sustentabilidade e limpeza urbana.
+* **Componentes da Interface:**
+  * **Filtros Simplificados:** Uso de seletores (*dropdowns*) fáceis de usar no celular ou computador.
+  * **Menu Lateral (Sidebar):** Navegação rápida por ícones para transição entre a Home e os Guias completos.
+  * **Cards Interativos:** Exibição dos Ecopontos com fotos reais e botões diretos de ação ("Saiba Mais").
+  * **Mapa Integrado:** Visualização geográfica das rotas e locais de descarte direto na tela de busca.
 
 ---
 
