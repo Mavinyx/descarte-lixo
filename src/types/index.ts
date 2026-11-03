@@ -3,7 +3,7 @@ export interface Bairro{
     nome: string;
     regiao: string;
 }
-export default interface Material{
+export interface Material{
     id: string;
     titulo: string;
     keywords: string[];
@@ -12,4 +12,13 @@ export default interface Material{
     corLixeira: string;
     corHex: string;
     orientacao: string;
+}
+export interface PontoColeta{
+    id: string;
+    nome: string;
+    endereco: string;
+    bairro: string;
+    bairrosProximos: string[];
+    materiaisAceitos: string[];
+    horarioFuncionamento: string;
 }

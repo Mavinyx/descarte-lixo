@@ -1,7 +1,7 @@
 @import '../globals.css';
 header{
-    background-color: var(--secondary);
+    background-color: var(--primary);
     border: 1px solid var(--default);
     position: fixed;
-    width: 100%;
+    height: 100%;
 }

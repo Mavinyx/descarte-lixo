@@ -68,5 +68,10 @@
     "id": "sao-jose",
     "nome": "São José",
     "regiao": "Quadrante Nordeste"
+  },
+  {
+    "id": "nossa-senhora-das-gracas",
+    "nome": "Nossa Senhora das Graças",
+    "regiao": "Quadrante Sudeste"
   }
 ]
