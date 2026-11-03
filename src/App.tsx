@@ -3,6 +3,7 @@ import BarraBusca from './components/BarraBusca.tsx'
 import PontosColeta from './data/pontos-coleta.json'
 import type {PontoColeta} from './types/index.ts'
 import { useState } from 'react'
+import CardPontoColeta from './components/CardPontoColeta.tsx'
 
 function App() {
   const pontosColeta: PontoColeta[] = PontosColeta.map((ponto) => ({
@@ -30,18 +31,13 @@ function App() {
         handleSelectMaterial(materialId);
       }}
     />
-    
-    <div className="flex flex-col items-center justify-center w-full">
+
+     <div className="flex flex-col items-center justify-center w-full">
         {list.map((ponto) => (
-          <div key={ponto.id} className="card bg-base-100 shadow-xl m-2">
-            <div className="card-body">
-              <h2 className="card-title">{ponto.nome}</h2>
-              <p>{ponto.endereco}</p>
-              <p>{ponto.horarioFuncionamento}</p>
-            </div>
-          </div>
+          <CardPontoColeta key={ponto.id} ponto={ponto} />
         ))}
-      </div>
+     </div>
+      
   
   </>
   )
