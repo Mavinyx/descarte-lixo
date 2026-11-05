@@ -1,78 +1,65 @@
-# React + TypeScript + Vite
+# BetterCanoas — Guia de Descarte e Coleta Seletiva em Canoas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este site ajuda os moradores de Canoas a entenderem onde e como descartar cada tipo de lixo, além de mostrar os horários e dias da coleta no seu bairro. O objetivo é tirar dúvidas rápidas e evitar que entulhos e materiais recicláveis sejam jogados nas calçadas de forma incorreta.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🤔 O que o site faz e como ele te ajuda?
 
-## React Compiler
+*   **Evita multas:** Mostra as regras de limpeza urbana de Canoas para que você não descarte materiais no lugar errado por engano.
+*   **Facilita sua rotina:** Você consegue conferir os dias e turnos (diurno ou noturno) do caminhão do lixo no seu bairro.
+*   **Tira dúvidas sobre lixo especial:** Explica o que fazer com lâmpadas, pilhas, eletrônicos e até mesmo o serviço correto de recolhimento para animais mortos, que não devem ir para o lixo comum.
+*   **Mantém a cidade limpa:** Ao saber onde entregar móveis velhos e restos de obras, evitamos o acúmulo de sujeira nas ruas e a proliferação de insetos.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## 🛠️ O que você vai encontrar no site (Funcionalidades)
 
-## Expanding the ESLint configuration
+### 🔍 Filtro "Encontre um Local"
+Logo na página inicial, você pode escolher o seu **Bairro** e o **Tipo de Resíduo** que quer jogar fora. O sistema indica na hora o ponto correto mais próximo.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 📚 Guia Prático de Descarte
+Uma lista separada pelas cores da coleta seletiva (Papel, Plástico, Vidro, Metal, Orgânico e Rejeitos) ensinando como preparar o material, como dar um enxágue rápido ou embalar vidros quebrados com segurança.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 📍 Localizador de Ecopontos
+Informações completas (endereço e horários de funcionamento) dos 5 Ecopontos da cidade:
+*   **Ecoponto Nazário** (Bairro Guajuviras)
+*   **Ecoponto Esperança** (Bairro Igara)
+*   **Ecoponto Espumoso** (Bairro Mathias Velho)
+*   **Ecoponto Rio Branco** (Bairro Rio Branco)
+*   **Ecoponto Niterói** (Bairro Niterói)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+*Nota: O site também avisa o limite de volume aceito (até 2m³) e o que os funcionários não podem receber lá.*
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🎨 Design e Interface (UX/UI)
 
-```
+O visual do **BetterCanoas** foi planejado no Canva com foco em acessibilidade e clareza visual:
+* **Paleta ecológica:** Cores baseadas em tons de verde e cinza para remeter à sustentabilidade e limpeza urbana.
+* **Componentes da Interface:**
+  * **Filtros Simplificados:** Uso de seletores (*dropdowns*) fáceis de usar no celular ou computador.
+  * **Menu Lateral (Sidebar):** Navegação rápida por ícones para transição entre a Home e os Guias completos.
+  * **Cards Interativos:** Exibição dos Ecopontos com fotos reais e botões diretos de ação ("Saiba Mais").
+  * **Mapa Integrado:** Visualização geográfica das rotas e locais de descarte direto na tela de busca.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Como rodar este projeto no seu computador
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Se você baixou o projeto do GitHub e quer ver o site funcionando no seu navegador, siga estes passos no terminal:
 
-```
+1. **Instale os componentes necessários:**
+   ```bash
+   npm install
+   ```
+2. **Caso falte o plugin de estilos (Tailwind/PostCSS), instale-o com:**
+   ```bash
+   npm install -D @tailwindcss/postcss tailwindcss postcss
+   ```
+3. **Inicie o projeto:**
+   ```bash
+   npm run dev
+   ```
+4. **Abra no navegador:**
+   Segure a tecla `Ctrl` e clique no link azul que aparecer no terminal (ex: `http://localhost:5173/`).
+
+---
