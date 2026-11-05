@@ -4,26 +4,34 @@ import PontosColeta from './data/pontos-coleta.json'
 import type {PontoColeta} from './types/index.ts'
 import { useState } from 'react'
 import CardPontoColeta from './components/CardPontoColeta.tsx'
+import Map from './components/Map.tsx'
 
 function App() {
   const pontosColeta: PontoColeta[] = PontosColeta.map((ponto) => ({
     ...ponto,
     horarioFuncionamento: ponto.horario,
   }));
-  const [list, setList] = useState<PontoColeta[]>([...pontosColeta]);
+  const [bairroSelecionado, setBairroSelecionado] = useState('');
+  const [materialSelecionado, setMaterialSelecionado] = useState('');
+  const list = pontosColeta.filter((ponto) =>
+    (!bairroSelecionado || ponto.bairrosProximos.includes(bairroSelecionado)) &&
+    (!materialSelecionado || ponto.materiaisAceitos.includes(materialSelecionado))
+  );
   
   //handlers
   const handleSelectBairro = (bairroId: string) => {
-    setList(pontosColeta.filter((ponto) => ponto.bairrosProximos.includes(bairroId)));
+    setBairroSelecionado(bairroId);
   }
   const handleSelectMaterial = (materialId: string) => {
-    setList(pontosColeta.filter((ponto) => ponto.materiaisAceitos.includes(materialId)));
+    setMaterialSelecionado(materialId);
   }
   
   return (
     <>
     <Header />
     <BarraBusca 
+      bairroSelecionado={bairroSelecionado}
+      materialSelecionado={materialSelecionado}
       onSelectBairro={(bairroId) => {
         handleSelectBairro(bairroId);
       }}
@@ -32,7 +40,7 @@ function App() {
       }}
     />
 
-      <div className="w-full max-w-4xl mx-auto px-4 my-6">
+    <div className="w-full max-w-4xl mx-auto px-4 my-6">
         <h2 className="text-lg font-bold mb-3 text-custom-primary">Pontos de Coleta Encontrados</h2>
         
         {list.length === 0 ? (
@@ -46,8 +54,8 @@ function App() {
             ))}
           </div>
         )}
-      </div>
-  
+    </div>
+    <Map pontosColeta={list} />
   </>
   )
 }

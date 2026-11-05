@@ -4,54 +4,66 @@
     "nome": "Ecoponto Espumoso",
     "endereco": "Rua Espumoso, 315",
     "bairro": "Mathias Velho",
-    "bairrosProximos": ["mathias-velho", "harmonia", "centro", "mato-grande", "são-luís"],
+    "bairrosProximos": ["mathias-velho", "harmonia", "centro", "mato-grande", "sao-luis"],
     "materiaisAceitos": ["entulho-obra", "madeira", "papel-papelao", "plastico", "vidro", "metal"],
-    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h"
+    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h",
+    "latitude": -29.897662753950552,
+    "longitude": -51.22349348762837
   },
   {
     "id": "ecoponto-sudeste",
     "nome": "Ecoponto Niterói",
     "endereco": "Rua Paulo Fonteles, 1560",
     "bairro": "Niterói",
-    "bairrosProximos": ["niterói", "marechal-rondon", "harmonia", "fátima"],
+    "bairrosProximos": ["niteroi", "marechal-rondon", "harmonia", "fatima"],
     "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "madeira", "entulho-obra"],
-    "horario": "Segunda a sexta, das 08h às 12h e das 13h às 17h; Sábado, das 08h às 12h; Domingo e feriado: fechado"
+    "horario": "Segunda a sexta, das 08h às 12h e das 13h às 17h; Sábado, das 08h às 12h; Domingo e feriado: fechado",
+    "latitude": -29.9571708592006,
+    "longitude": -51.15941870391747
   },
   {
     "id": "ecoponto-rio-branco",
     "nome": "Ecoponto Rio Branco",
     "endereco": "Rua Hermes da Fonseca, 1770",
     "bairro": "Rio Branco",
-    "bairrosProximos": ["rio-branco", "fátima", "niterói", "centro"],
+    "bairrosProximos": ["rio-branco", "fatima", "niteroi", "centro"],
     "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "madeira"],
-    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h"
+    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h",
+    "latitude": -29.96638172161321,
+    "longitude":  -51.1927800707319
   },
   {
     "id": "ecoponto-nazario",
     "nome": "Ecoponto Nazário",
     "endereco": "Estrada Passo do Nazário (Acesso ao Aterro Sanitário)",
     "bairro": "Guajuviras",
-    "bairrosProximos": ["guajuviras", "estância-velha"],
+    "bairrosProximos": ["guajuviras", "estancia-velha"],
     "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "entulho-obra"],
-    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h"
+    "horario": "Todos os dias, das 08h às 12h e das 13h às 18h",
+    "latitude": -29.901454699785152,
+    "longitude": -51.12903859612986
   },
   {
     "id": "ifrs-campus-canoas",
     "nome": "IFRS - Campus Canoas",
     "endereco": "Rua Dra. Maria Zélia Carneiro de Figueiredo, 870",
     "bairro": "Igara",
-    "bairrosProximos": ["igara", "guajuviras", "são-josé"],
+    "bairrosProximos": ["igara", "guajuviras", "sao-jose"],
     "materiaisAceitos": ["eletronicos", "papel-papelao", "plastico", "metal"],
-    "horario": "Dias úteis, em horário comercial/acadêmico"
+    "horario": "Dias úteis, em horário comercial/acadêmico",
+    "latitude": -29.899663858679027,
+    "longitude": -51.15054477413573
   },
   {
     "id": "ponto-reciclus-centro",
     "nome": "Ponto de Coleta Reciclus",
     "endereco": "Avenida Victor Barreto, 2110",
     "bairro": "Centro",
-    "bairrosProximos": ["centro", "mathias-velho", "marechal-rondon", "nossa-senhora-das-graças"],
+    "bairrosProximos": ["centro", "mathias-velho", "marechal-rondon", "nossa-senhora-das-graças", "harmonia"],
     "materiaisAceitos": ["eletronicos"],
-    "horario": "Horário comercial do estabelecimento parceiro"
+    "horario": "Horário comercial do estabelecimento parceiro",
+    "latitude": -29.91484141077883,
+    "longitude": -51.181968534375244
   },
   {
     "id": "cooperteq",
@@ -60,7 +72,9 @@
     "bairro": "Rio Branco",
     "bairrosProximos": ["rio-branco", "centro"],
     "materiaisAceitos": ["eletronicos"],
-    "horario": "Horário comercial"
+    "horario": "Horário comercial",
+    "latitude": -29.960926558376443, 
+    "longitude": -51.17857393180554
   },
   {
     "id": "secretaria-meio-ambiente",
@@ -69,15 +83,19 @@
     "bairro": "Nossa Senhora das Graças",
     "bairrosProximos": ["nossa-senhora-das-graças", "centro", "marechal-rondon"],
     "materiaisAceitos": ["residuos-perigosos", "corpo-animal", "entulho-obra"],
-    "horario": "Segunda a Sexta-feira, em horário comercial"
+    "horario": "Segunda a Sexta-feira, em horário comercial",
+    "latitude": -29.927159118746694, 
+    "longitude":-51.17105303725067
   },
   {
     "id": "aterro-sanitario",
     "nome": "Aterro Sanitário de Canoas",
     "endereco": "Estrada Passo do Nazário, s/n",
     "bairro": "Guajuviras",
-    "bairrosProximos": ["guajuviras", "estância-velha"],
+    "bairrosProximos": ["guajuviras", "estancia-velha"],
     "materiaisAceitos": ["entulho-obra", "rejeitos", "residuos-perigosos"],
-    "horario": "Segunda a Sábado, das 07h às 18h"
+    "horario": "Segunda a Sábado, das 07h às 18h",
+    "latitude": -29.90514559070707, 
+    "longitude": -51.11303355078463
   }
 ]

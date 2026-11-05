@@ -21,4 +21,6 @@ export interface PontoColeta{
     bairrosProximos: string[];
     materiaisAceitos: string[];
     horarioFuncionamento: string;
+    latitude: number;
+    longitude: number;
 }
