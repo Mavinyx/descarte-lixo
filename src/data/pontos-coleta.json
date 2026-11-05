@@ -8,7 +8,8 @@
     "materiaisAceitos": ["entulho-obra", "madeira", "papel-papelao", "plastico", "vidro", "metal"],
     "horario": "Todos os dias, das 08h às 12h e das 13h às 18h",
     "latitude": -29.897662753950552,
-    "longitude": -51.22349348762837
+    "longitude": -51.22349348762837,
+    "urlImg": "../assets/ecopontos/ecoponto-espumoso.png"
   },
   {
     "id": "ecoponto-sudeste",
@@ -19,7 +20,8 @@
     "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "madeira", "entulho-obra"],
     "horario": "Segunda a sexta, das 08h às 12h e das 13h às 17h; Sábado, das 08h às 12h; Domingo e feriado: fechado",
     "latitude": -29.9571708592006,
-    "longitude": -51.15941870391747
+    "longitude": -51.15941870391747,
+    "urlImg": "../assets/ecopontos/ecoponto-niteroi.png"
   },
   {
     "id": "ecoponto-rio-branco",
@@ -30,7 +32,8 @@
     "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "madeira"],
     "horario": "Todos os dias, das 08h às 12h e das 13h às 18h",
     "latitude": -29.96638172161321,
-    "longitude":  -51.1927800707319
+    "longitude":  -51.1927800707319,
+    "urlImg": "../assets/ecopontos/ecoponto-rio-branco.png"
   },
   {
     "id": "ecoponto-nazario",
@@ -41,7 +44,8 @@
     "materiaisAceitos": ["papel-papelao", "plastico", "vidro", "metal", "entulho-obra"],
     "horario": "Todos os dias, das 08h às 12h e das 13h às 18h",
     "latitude": -29.901454699785152,
-    "longitude": -51.12903859612986
+    "longitude": -51.12903859612986,
+    "urlImg": "../assets/ecopontos/ecoponto-nazario.png"
   },
   {
     "id": "ifrs-campus-canoas",
@@ -52,7 +56,8 @@
     "materiaisAceitos": ["eletronicos", "papel-papelao", "plastico", "metal"],
     "horario": "Dias úteis, em horário comercial/acadêmico",
     "latitude": -29.899663858679027,
-    "longitude": -51.15054477413573
+    "longitude": -51.15054477413573,
+    "urlImg": "../assets/ecopontos/ifrs.png"
   },
   {
     "id": "ponto-reciclus-centro",
@@ -63,7 +68,8 @@
     "materiaisAceitos": ["eletronicos"],
     "horario": "Horário comercial do estabelecimento parceiro",
     "latitude": -29.91484141077883,
-    "longitude": -51.181968534375244
+    "longitude": -51.181968534375244,
+    "urlImg": "../assets/ecopontos/coleta-reciclus.png"
   },
   {
     "id": "cooperteq",
@@ -74,7 +80,8 @@
     "materiaisAceitos": ["eletronicos"],
     "horario": "Horário comercial",
     "latitude": -29.960926558376443, 
-    "longitude": -51.17857393180554
+    "longitude": -51.17857393180554,
+    "urlImg": "../assets/ecopontos/coopertec.png"
   },
   {
     "id": "secretaria-meio-ambiente",
@@ -85,7 +92,8 @@
     "materiaisAceitos": ["residuos-perigosos", "corpo-animal", "entulho-obra"],
     "horario": "Segunda a Sexta-feira, em horário comercial",
     "latitude": -29.927159118746694, 
-    "longitude":-51.17105303725067
+    "longitude":-51.17105303725067,
+    "urlImg": "../assets/ecopontos/secret-meio-amb.png"
   },
   {
     "id": "aterro-sanitario",
@@ -96,6 +104,7 @@
     "materiaisAceitos": ["entulho-obra", "rejeitos", "residuos-perigosos"],
     "horario": "Segunda a Sábado, das 07h às 18h",
     "latitude": -29.90514559070707, 
-    "longitude": -51.11303355078463
+    "longitude": -51.11303355078463,
+    "urlImg": "../assets/ecopontos/aterro-san.png"
   }
 ]
