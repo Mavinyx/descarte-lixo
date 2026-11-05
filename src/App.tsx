@@ -32,12 +32,21 @@ function App() {
       }}
     />
 
-     <div className="flex items-left justify-center w-xs box-sizing-border overflow-hidden m-2 border-2">
-        {list.map((ponto) => (
-          <CardPontoColeta key={ponto.id} ponto={ponto} />
-        ))}
-     </div>
-      
+      <div className="w-full max-w-4xl mx-auto px-4 my-6">
+        <h2 className="text-lg font-bold mb-3 text-custom-primary">Pontos de Coleta Encontrados</h2>
+        
+        {list.length === 0 ? (
+          <p className="text-gray-500 italic">Nenhum ponto encontrado para os filtros selecionados.</p>
+        ) : (
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar scrollbar-thumb-custom-quaternary">
+            {list.map((ponto) => (
+              <div key={ponto.id} className="snap-center shrink-0 w-80">
+                <CardPontoColeta ponto={ponto} />
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
   
   </>
   )
