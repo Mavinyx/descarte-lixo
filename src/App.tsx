@@ -1,121 +1,62 @@
+import Header from './components/Header.tsx'
+import BarraBusca from './components/BarraBusca.tsx'
+import PontosColeta from './data/pontos-coleta.json'
+import type {PontoColeta} from './types/index.ts'
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import CardPontoColeta from './components/CardPontoColeta.tsx'
+import Map from './components/Map.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const pontosColeta: PontoColeta[] = PontosColeta.map((ponto) => ({
+    ...ponto,
+    horarioFuncionamento: ponto.horario,
+  }));
+  const [bairroSelecionado, setBairroSelecionado] = useState('');
+  const [materialSelecionado, setMaterialSelecionado] = useState('');
+  const list = pontosColeta.filter((ponto) =>
+    (!bairroSelecionado || ponto.bairrosProximos.includes(bairroSelecionado)) &&
+    (!materialSelecionado || ponto.materiaisAceitos.includes(materialSelecionado))
+  );
+  
+  //handlers
+  const handleSelectBairro = (bairroId: string) => {
+    setBairroSelecionado(bairroId);
+  }
+  const handleSelectMaterial = (materialId: string) => {
+    setMaterialSelecionado(materialId);
+  }
+  
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <Header />
+    <BarraBusca 
+      bairroSelecionado={bairroSelecionado}
+      materialSelecionado={materialSelecionado}
+      onSelectBairro={(bairroId) => {
+        handleSelectBairro(bairroId);
+      }}
+      onSelectMaterial={(materialId) => {
+        handleSelectMaterial(materialId);
+      }}
+    />
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+    <div className="w-full max-w-4xl mx-auto px-4 my-6">
+        <h2 className="text-lg font-bold mb-3 text-custom-primary">Pontos de Coleta Encontrados</h2>
+        
+        {list.length === 0 ? (
+          <p className="text-gray-500 italic">Nenhum ponto encontrado para os filtros selecionados.</p>
+        ) : (
+          <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 scrollbar scrollbar-thumb-custom-quaternary">
+            {list.map((ponto) => (
+              <div key={ponto.id} className="snap-center shrink-0 w-80">
+                <CardPontoColeta ponto={ponto} />
+              </div>
+            ))}
+          </div>
+        )}
+    </div>
+    <Map pontosColeta={list} />
+  </>
   )
 }
 
