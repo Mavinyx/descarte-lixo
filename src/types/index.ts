@@ -23,4 +23,5 @@ export interface PontoColeta{
     horarioFuncionamento: string;
     latitude: number;
     longitude: number;
+    urlImg: string;
 }
