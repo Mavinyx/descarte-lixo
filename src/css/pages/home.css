@@ -5,11 +5,11 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    width: 94%;
-    height: 100%;
+    width: 100%;
+    height: 92%;
     border: 1px solid black;
     justify-self: flex-end;
-    padding:30px;
+    padding:10%;
 }
 #busca-container{
     display: flex;

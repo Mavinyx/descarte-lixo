@@ -5,10 +5,11 @@ function App() {
   return (
     <>
       <header>
-        <nav>
-          <Link to="/">Home</Link><Link to="/guias">Guias</Link>
-        </nav>
+          <nav>
+            <Link to="/" className="btn-menu">Home</Link><Link to="/guias" className="btn-menu">Guias</Link>
+          </nav>
       </header>
+      <div id="cabeçalho" className="bg-custom-primary w-full h-[8%]">Better Canoas</div>
       
       <Routes>
         <Route path="/"  element={<Home/>} />

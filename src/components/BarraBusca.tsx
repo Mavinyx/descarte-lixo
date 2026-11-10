@@ -28,7 +28,7 @@ function BarraBusca({
         onSelectMaterial(selectedMaterialId);
     }
     return ( 
-    <div className="fieldset bg-base-100 border-base-300 rounded-box border w-[80%] h-[40%] ">
+    <div className="fieldset">
         <label htmlFor="select-bairro">Selecione um bairro: </label>
         <select id="select-bairro" className="select bg-custom-default w-[60%]" value={bairroSelecionado} onChange={handleBairroChange}>
         <option value="">Todos os bairros</option>

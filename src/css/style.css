@@ -4,7 +4,6 @@
 @plugin "daisyui";
 
 * {
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -24,9 +23,25 @@ body {
 }
 
 header{
-    background-color: var(--primary);
+    background-color: var(--secondary);
     border: 1px solid var(--default);
     position: fixed;
     height: 100%;
-    color: white;
+    width: 6%;
+    color: var(primary);
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#cabeçalho{
+  color: var(--secondary);
+  padding-left: 10%;
+  font-size: 3rem;
+  align-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
