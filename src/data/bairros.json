@@ -20,8 +20,18 @@
     "regiao": "Quadrante Noroeste"
   },
   {
+    "id": "industrial",
+    "nome": "Industrial",
+    "regiao": "Quadrante Noroeste"
+  },
+  {
     "id": "niteroi",
     "nome": "Niterói",
+    "regiao": "Quadrante Sudeste"
+  },
+  {
+    "id": "nossa-senhora-das-graças",
+    "nome": "Nossa Senhora das Graças",
     "regiao": "Quadrante Sudeste"
   },
   {
@@ -50,11 +60,6 @@
     "regiao": "Quadrante Nordeste"
   },
   {
-    "id": "marechal-rondon",
-    "nome": "Marechal Rondon",
-    "regiao": "Centro-Norte"
-  },
-  {
     "id": "igara",
     "nome": "Igara",
     "regiao": "Quadrante Nordeste"
@@ -70,8 +75,13 @@
     "regiao": "Quadrante Nordeste"
   },
   {
-    "id": "nossa-senhora-das-gracas",
-    "nome": "Nossa Senhora das Graças",
-    "regiao": "Quadrante Sudeste"
+    "id": "brigadeira",
+    "nome": "Brigadeira",
+    "regiao": "Quadrante Nordeste"
+  },
+  {
+    "id": "marechal-rondon",
+    "nome": "Marechal Rondon",
+    "regiao": "Centro-Norte"
   }
 ]
