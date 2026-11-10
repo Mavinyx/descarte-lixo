@@ -27,9 +27,20 @@ function BarraBusca({
         const selectedMaterialId = event.target.value;
         onSelectMaterial(selectedMaterialId);
     }
+    
     return ( 
-    <div className="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4">
-       <select className="select bg-custom-default w-full max-w-xs" value={bairroSelecionado} onChange={handleBairroChange}>
+    /* 
+      Ajustado para ocupar 100% da largura, dispor os seletores lado a lado 
+      no computador (md:flex-row) e empilhados no celular (flex-col).
+    */
+    <div className="w-full flex flex-col md:flex-row gap-4 items-center justify-between">
+        
+       {/* Seletor de Bairros */}
+       <select 
+         className="select select-bordered bg-white text-brand-dark border-gray-200 w-full" 
+         value={bairroSelecionado} 
+         onChange={handleBairroChange}
+       >
         <option value="">Todos os bairros</option>
         {bairros.map((bairro) => (
             <option key={bairro.id} value={bairro.id}>
@@ -37,7 +48,13 @@ function BarraBusca({
             </option>
         ))}
         </select>
-          <select className="select bg-custom-default w-l max-w-xs" value={materialSelecionado} onChange={handleMaterialChange}>
+
+        {/* Seletor de Materiais (Corrigido de w-l para w-full) */}
+        <select 
+          className="select select-bordered bg-white text-brand-dark border-gray-200 w-full" 
+          value={materialSelecionado} 
+          onChange={handleMaterialChange}
+        >
             <option value="">Todos os materiais</option>
             {materiaisData.map((material) => (
                 <option key={material.id} value={material.id}>
