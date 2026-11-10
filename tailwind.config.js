@@ -9,6 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Cores com os nomes amigáveis que usamos no novo design baseado na sua foto
+        'brand-dark': '#192524',      // Verde escuro quase preto
+        'brand-primary': '#3C5759',   // Verde petróleo
+        'brand-secondary': '#959D90', // Verde acinzentado
+        'brand-light': '#D1EBDB',     // Verde menta claro
+        'brand-bg': '#efece9',        // Fundo suave que já estava no seu base-100
+
+        // Mantidas as suas variáveis antigas caso outros componentes antigos dependam delas
         'custom-primary': 'var(--primary)',
         'custom-secondary': 'var(--secondary)',
         'custom-default': 'var(--default)',
