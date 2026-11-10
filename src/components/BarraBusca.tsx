@@ -39,7 +39,7 @@ function BarraBusca({
             ))}
         </select>
         <label htmlFor="select-material">Selecione um tipo de material:</label>
-         <select id="select-materia" className="select bg-custom-default w-[60%]" value={materialSelecionado} onChange={handleMaterialChange}>
+         <select id="select-material" className="select bg-custom-default w-[60%]" value={materialSelecionado} onChange={handleMaterialChange}>
             <option value="">Todos os materiais</option>
                 {materiaisData.map((material) => (
                     <option key={material.id} value={material.id}>
