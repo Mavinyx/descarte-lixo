@@ -28,22 +28,24 @@ function BarraBusca({
         onSelectMaterial(selectedMaterialId);
     }
     return ( 
-    <div className="fieldset bg-base-100 border-base-300 rounded-box w-xs border p-4">
-       <select className="select bg-custom-default w-full max-w-xs" value={bairroSelecionado} onChange={handleBairroChange}>
+    <div className="fieldset bg-base-100 border-base-300 rounded-box border w-[80%] h-[40%] ">
+        <label htmlFor="select-bairro">Selecione um bairro: </label>
+        <select id="select-bairro" className="select bg-custom-default w-[60%]" value={bairroSelecionado} onChange={handleBairroChange}>
         <option value="">Todos os bairros</option>
-        {bairros.map((bairro) => (
-            <option key={bairro.id} value={bairro.id}>
-                {bairro.nome}
-            </option>
-        ))}
-        </select>
-          <select className="select bg-custom-default w-l max-w-xs" value={materialSelecionado} onChange={handleMaterialChange}>
-            <option value="">Todos os materiais</option>
-            {materiaisData.map((material) => (
-                <option key={material.id} value={material.id}>
-                    {material.titulo}
+            {bairros.map((bairro) => (
+                <option key={bairro.id} value={bairro.id}>
+                    {bairro.nome}
                 </option>
             ))}
+        </select>
+        <label htmlFor="select-material">Selecione um tipo de material:</label>
+         <select id="select-materia" className="select bg-custom-default w-[60%]" value={materialSelecionado} onChange={handleMaterialChange}>
+            <option value="">Todos os materiais</option>
+                {materiaisData.map((material) => (
+                    <option key={material.id} value={material.id}>
+                        {material.titulo}
+                    </option>
+                ))}
         </select>
     </div>
     )
