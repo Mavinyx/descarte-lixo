@@ -7,27 +7,37 @@
     "composicao": "Orgânico",
     "corLixeira": "Marrom",
     "corHex": "#795548",
-    "orientacao": "Descarte no lixo orgânico doméstico para coleta comum ou compostagem."
+    "orientacao": "Descarte no lixo orgânico doméstico para coleta comum ou compostagem. Não é aceito em Ecopontos."
+  },
+  {
+    "id": "poda-jardinagem",
+    "titulo": "Restos de Poda e Jardinagem",
+    "keywords": ["galho", "poda", "folha seca", "grama", "tronco", "jardinagem", "arbusto"],
+    "origem": "Doméstico / Público",
+    "composicao": "Orgânico / Verde",
+    "corLixeira": "Marrom",
+    "corHex": "#6D4C41",
+    "orientacao": "Galhos, troncos e restos de poda devem ser encaminhados aos Ecopontos habilitados."
   },
   {
     "id": "papel-papelao",
-    "titulo": "Papel e Papelão",
-    "keywords": ["papel", "papelao", "caixa", "folha", "jornal", "revista", "embalagem de papel"],
+    "titulo": "Papel, Papelão e Tetra Pak",
+    "keywords": ["papel", "papelao", "caixa", "folha", "jornal", "revista", "embalagem de papel", "tetra pak", "caixinha de leite"],
     "origem": "Doméstico",
     "composicao": "Reciclável",
     "corLixeira": "Azul",
     "corHex": "#2196F3",
-    "orientacao": "Mantenha limpo e seco. Descarte na coleta seletiva (lixeira azul)."
+    "orientacao": "Mantenha limpo, seco e desmontado. Descarte na coleta seletiva (lixeira azul) ou entregue em Ecopontos."
   },
   {
     "id": "plastico",
-    "titulo": "Garrafas e Embalagens Plásticas",
-    "keywords": ["plastico", "garrafa pet", "embalagem", "sacola", "pote", "tampa"],
+    "titulo": "Plásticos e Isopor",
+    "keywords": ["plastico", "garrafa pet", "embalagem", "sacola", "pote", "tampa", "isopor", "eps"],
     "origem": "Doméstico",
     "composicao": "Reciclável",
     "corLixeira": "Vermelho",
     "corHex": "#F44336",
-    "orientacao": "Higienize as embalagens e coloque na coleta seletiva (lixeira vermelha)."
+    "orientacao": "Higienize as embalagens e coloque na coleta seletiva (lixeira vermelha) ou leve a um Ecoponto."
   },
   {
     "id": "vidro",
@@ -37,47 +47,87 @@
     "composicao": "Reciclável",
     "corLixeira": "Verde",
     "corHex": "#4CAF50",
-    "orientacao": "Embale bem cacos para evitar acidentes. Descarte no recipiente de vidro (lixeira verde)."
+    "orientacao": "Embale bem cacos para evitar acidentes. Descarte na coleta seletiva (lixeira verde) ou nos Ecopontos."
   },
   {
     "id": "metal",
-    "titulo": "Latas e Metais",
-    "keywords": ["metal", "lata", "aluminio", "ferro", "tampa de garrafa", "esquadria"],
+    "titulo": "Latas, Sucatas e Metais",
+    "keywords": ["metal", "lata", "aluminio", "ferro", "tampa de garrafa", "esquadria", "sucata", "cobre"],
     "origem": "Doméstico",
     "composicao": "Reciclável",
     "corLixeira": "Amarelo",
     "corHex": "#FFEB3B",
-    "orientacao": "Lave e remova resíduos antes de encaminhar à coleta seletiva (lixeira amarela)."
+    "orientacao": "Lave e remova resíduos antes de encaminhar à coleta seletiva (lixeira amarela) ou aos Ecopontos."
   },
   {
     "id": "madeira",
     "titulo": "Madeiras e Retalhos",
-    "keywords": ["madeira", "retalho", "ripa", "palete", "galho"],
-    "origem": "Público",
+    "keywords": ["madeira", "retalho", "ripa", "palete", "tabua", "compensado"],
+    "origem": "Doméstico / Construção",
     "composicao": "Reciclável",
     "corLixeira": "Preto",
     "corHex": "#212121",
-    "orientacao": "Pedaços menores vão na lixeira preta. Grandes volumes/móveis devem ir ao Ecoponto."
+    "orientacao": "Pedaços pequenos podem ir na coleta convencional; volumes maiores devem ser levados a um Ecoponto."
   },
   {
-    "id": "eletronicos",
-    "titulo": "Lixo Eletrônico, Celulares e Computadores",
-    "keywords": ["eletronico", "celular", "computador", "televisao", "tv", "fio", "cabo", "placa", "bateria", "pilha"],
+    "id": "moveis-volumosos",
+    "titulo": "Móveis Velhos e Volumosos",
+    "keywords": ["movel", "sofa", "guarda-roupa", "cadeira", "mesa", "colchao", "armario", "estante"],
+    "origem": "Doméstico",
+    "composicao": "Volumoso",
+    "corLixeira": "Preto",
+    "corHex": "#212121",
+    "orientacao": "Móveis sem uso (respeitando o limite de volume diário) são recebidos gratuitamente nos Ecopontos."
+  },
+  {
+    "id": "eletroeletronicos",
+    "titulo": "Eletroeletrônicos e Eletrodomésticos",
+    "keywords": ["eletronico", "celular", "computador", "televisao", "tv", "fio", "cabo", "placa", "carregador", "eletrodomestico"],
     "origem": "Doméstico",
     "composicao": "Eletrônico",
     "corLixeira": "Laranja",
     "corHex": "#FF9800",
-    "orientacao": "Não coloque no lixo comum. Entregue em pontos de coleta específicos ou ecopontos."
+    "orientacao": "Aparelhos eletroeletrônicos sem uso (sem pilhas ou baterias soltas) devem ser entregues em Ecopontos ou PEVs."
+  },
+  {
+    "id": "pilhas-baterias",
+    "titulo": "Pilhas e Baterias",
+    "keywords": ["pilha", "bateria", "bateria de celular", "bateria de notebook"],
+    "origem": "Doméstico",
+    "composicao": "Perigoso / Logística Reversa",
+    "corLixeira": "Laranja",
+    "corHex": "#FF9800",
+    "orientacao": "Não são aceitas na maioria dos Ecopontos. Entregue em coletores específicos de supermercados, farmácias ou lojas."
+  },
+  {
+    "id": "lampadas",
+    "titulo": "Lâmpadas (Fluorescentes e LED)",
+    "keywords": ["lampada", "fluorescente", "led", "bulbo", "reator"],
+    "origem": "Doméstico / Comercial",
+    "composicao": "Perigoso / Logística Reversa",
+    "corLixeira": "Laranja",
+    "corHex": "#FF9800",
+    "orientacao": "Não aceitas em Ecopontos comuns. Embale para não quebrar e entregue em pontos de logística reversa (lojas e mercados)."
   },
   {
     "id": "entulho-obra",
-    "titulo": "Restos de Obra e Tijolos (Entulho)",
-    "keywords": ["tijolo", "tijolos", "concreto", "cimento", "argamassa", "entulho", "piso", "ceramica", "azulejo"],
-    "origem": "Público",
+    "titulo": "Restos de Obra e Tijolos (Caliça)",
+    "keywords": ["tijolo", "tijolos", "concreto", "cimento", "argamassa", "entulho", "piso", "ceramica", "azulejo", "calica"],
+    "origem": "Construção Civil",
     "composicao": "Rejeitos não recicláveis",
     "corLixeira": "Cinza",
     "corHex": "#9E9E9E",
-    "orientacao": "Resíduos da construção civil (até 1m³) devem ser levados a um Ecoponto do município."
+    "orientacao": "Resíduos limpos da construção civil (sem gesso ou amianto) devem ser levados a um Ecoponto."
+  },
+  {
+    "id": "gesso-amianto",
+    "titulo": "Gesso e Amianto",
+    "keywords": ["gesso", "drywall", "amianto", "telha de amianto", "forro de gesso"],
+    "origem": "Construção Civil",
+    "composicao": "Perigoso / Especial",
+    "corLixeira": "Cinza",
+    "corHex": "#757575",
+    "orientacao": "Proibido em Ecopontos comuns. Requer descarte via empresas especializadas ou caçambas licenciadas."
   },
   {
     "id": "rejeitos",
@@ -97,27 +147,27 @@
     "composicao": "Reciclável / Especial",
     "corLixeira": "Laranja",
     "corHex": "#FF9800",
-    "orientacao": "Armazene em garrafa PET transparente e bem fechada para entregar nos pontos de coleta."
+    "orientacao": "Armazene em garrafa PET transparente e bem fechada para entregar nos Ecopontos ou pontos de coleta."
   },
   {
     "id": "residuos-perigosos",
-    "titulo": "Resíduos Perigosos (Óleos, Tintas e Solventes)",
-    "keywords": ["tinta", "solvente", "agrotoxico", "quimico", "veneno"],
-    "origem": "Industrial",
+    "titulo": "Resíduos Perigosos (Tintas, Solventes e Óleos Lubrificantes)",
+    "keywords": ["tinta", "solvente", "agrotoxico", "quimico", "veneno", "graxa", "impermeabilizante", "oleo lubrificante", "oleo de motor"],
+    "origem": "Doméstico / Industrial",
     "composicao": "Perigoso",
     "corLixeira": "Laranja",
     "corHex": "#FF9800",
-    "orientacao": "Materiais tóxicos/inflamáveis. Requerem descarte especial e empresas licenciadas."
+    "orientacao": "Não aceitos em Ecopontos comuns. Materiais tóxicos ou inflamáveis exigem descarte em pontos licenciados."
   },
   {
     "id": "hospitalar",
     "titulo": "Resíduos de Saúde e Medicamentos Vencidos",
-    "keywords": ["seringa", "luva", "bandagem", "curativo", "medicamento", "remedio", "agulha"],
-    "origem": "Hospitalar",
+    "keywords": ["seringa", "luva", "bandagem", "curativo", "medicamento", "remedio", "agulha", "infectante"],
+    "origem": "Hospitalar / Doméstico",
     "composicao": "Biológico / Infectante",
     "corLixeira": "Branco",
     "corHex": "#FFFFFF",
-    "orientacao": "Remédios e perfurocortantes devem ser entregues em farmácias ou postos de saúde."
+    "orientacao": "Não aceitos em Ecopontos. Remédios e perfurocortantes devem ser entregues em farmácias ou postos de saúde."
   },
   {
     "id": "corpo-animal",
@@ -127,7 +177,7 @@
     "composicao": "Lixo animal",
     "corLixeira": "Marrom",
     "corHex": "#5D4037",
-    "orientacao": "Solicite o recolhimento especial diretamente com a Secretaria de Meio Ambiente / Prefeitura."
+    "orientacao": "Proibido em Ecopontos. Solicite o recolhimento especial diretamente com a Secretaria de Meio Ambiente / Prefeitura."
   },
   {
     "id": "radioativo",
@@ -137,7 +187,7 @@
     "composicao": "Radioativo",
     "corLixeira": "Roxo",
     "corHex": "#9C27B0",
-    "orientacao": "Sujeito a controle e descarte sob rígidas normas da CNEN."
+    "orientacao": "Proibido em Ecopontos. Sujeito a controle e descarte sob rígidas normas da CNEN."
   },
   {
     "id": "espacial",

@@ -2,6 +2,8 @@ export interface Bairro{
     id: string;
     nome: string;
     regiao: string;
+    turno?: string[];
+    dias?: string;
 }
 export interface Material{
     id: string;

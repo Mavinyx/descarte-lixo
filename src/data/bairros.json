@@ -2,62 +2,86 @@
   {
     "id": "centro",
     "nome": "Centro",
-    "regiao": "Centro"
-  },
+    "regiao": "Centro",
+    "turno": ["noturno"],
+    "dias":"segunda a sábado"
+    },
   {
     "id": "mathias-velho",
     "nome": "Mathias Velho",
-    "regiao": "Quadrante Noroeste"
+    "regiao": "Quadrante Noroeste",
+    "turno": ["diurno","noturno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "harmonia",
     "nome": "Harmonia",
-    "regiao": "Quadrante Noroeste"
+    "regiao": "Quadrante Noroeste",
+    "turno": ["diurno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "sao-luis",
     "nome": "São Luís",
-    "regiao": "Quadrante Noroeste"
+    "regiao": "Quadrante Noroeste",
+    "turno": ["?"],
+    "dias": "?"
   },
   {
     "id": "industrial",
     "nome": "Industrial",
-    "regiao": "Quadrante Noroeste"
+    "regiao": "Quadrante Noroeste",
+    "turno": ["?"],
+    "dias": "?"
   },
   {
     "id": "niteroi",
     "nome": "Niterói",
-    "regiao": "Quadrante Sudeste"
+    "regiao": "Quadrante Sudeste",
+    "turno": ["diurno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "nossa-senhora-das-graças",
     "nome": "Nossa Senhora das Graças",
-    "regiao": "Quadrante Sudeste"
+    "regiao": "Quadrante Sudeste",
+    "turno": ["?"],
+    "dias": "?"
   },
   {
     "id": "rio-branco",
     "nome": "Rio Branco",
-    "regiao": "Quadrante Sudoeste"
+    "regiao": "Quadrante Sudoeste",
+    "turno": ["noturno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "fatima",
     "nome": "Fátima",
-    "regiao": "Quadrante Sudoeste"
+    "regiao": "Quadrante Sudoeste",
+    "turno": ["noturno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "mato-grande",
     "nome": "Mato Grande",
-    "regiao": "Quadrante Sudoeste"
+    "regiao": "Quadrante Sudoeste",
+    "turno": ["diurno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "guajuviras",
     "nome": "Guajuviras",
-    "regiao": "Quadrante Nordeste"
+    "regiao": "Quadrante Nordeste",
+    "turno": ["diurno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "estancia-velha",
     "nome": "Estância Velha",
-    "regiao": "Quadrante Nordeste"
+    "regiao": "Quadrante Nordeste",
+    "turno": ["diurno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "igara",
@@ -67,21 +91,29 @@
   {
     "id": "olaria",
     "nome": "Olaria",
-    "regiao": "Quadrante Nordeste"
+    "regiao": "Quadrante Nordeste",
+    "turno": ["diurno"],
+    "dias": "segunda a sábado"
   },
   {
     "id": "sao-jose",
     "nome": "São José",
-    "regiao": "Quadrante Nordeste"
+    "regiao": "Quadrante Nordeste",
+    "turno": ["?"],
+    "dias": "?"
   },
   {
     "id": "brigadeira",
     "nome": "Brigadeira",
-    "regiao": "Quadrante Nordeste"
+    "regiao": "Quadrante Nordeste",
+    "turno": ["?"],
+    "dias": "?"
   },
   {
     "id": "marechal-rondon",
     "nome": "Marechal Rondon",
-    "regiao": "Centro-Norte"
+    "regiao": "Centro-Norte",
+    "turno": ["diurno"],
+    "dias": "segunda a sábado"
   }
 ]
