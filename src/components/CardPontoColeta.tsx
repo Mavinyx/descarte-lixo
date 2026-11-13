@@ -12,9 +12,9 @@ interface ICardPontoColetaProps {
 
 function CardPontoColeta({ ponto }: ICardPontoColetaProps) {
   return (
-    <div className="card shadow-xl m-2 h-[50%]">
-      <div className="card-body">
-        <img src={imagens[ponto.urlImg]} alt={`Foto de ${ponto.nome}`} className="w-full h-48 object-cover" />
+    <div className="card  m-2 h-[50%]">
+      <div className="card-body ">
+        <img src={imagens[ponto.urlImg]} alt={`Foto de ${ponto.nome}`} className="w-full shadow-xs h-48 object-cover" />
         <h2 className="card-title">{ponto.nome}</h2>
         <p>{ponto.endereco}</p>
         <p>{ponto.horarioFuncionamento}</p>

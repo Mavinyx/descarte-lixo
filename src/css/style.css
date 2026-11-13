@@ -4,7 +4,6 @@
 @plugin "daisyui";
 
 * {
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -15,7 +14,6 @@ body {
   align-items: center;
   max-width: 100%;
   min-height: 100vh;
-  border: 1px solid var(--default);
 }
 
 #root {
@@ -24,9 +22,18 @@ body {
 }
 
 header{
-    background-color: var(--primary);
-    border: 1px solid var(--default);
+    background-color: var(--secondary);
     position: fixed;
     height: 100%;
-    color: white;
+    width: 6%;
+    color: var(primary);
+}
+
+
+#cabeçalho{
+  color: var(--secondary);
+  padding-left: 10%;
+  font-size: 3rem;
+  align-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }

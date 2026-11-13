@@ -30,16 +30,21 @@ function Home(){
     return(
         <div id="home-container">
             <div id="busca-container">
-                <BarraBusca 
-                bairroSelecionado={bairroSelecionado}
-                materialSelecionado={materialSelecionado}
-                onSelectBairro={(bairroId) => {
-                    handleSelectBairro(bairroId);
-                }}
-                onSelectMaterial={(materialId) => {
-                    handleSelectMaterial(materialId);
-                }}
-                />
+                <section className="bg-white p-6 rounded-2x1 shadow-md border-base-300 rounded-box border w-[80%] h-[50%]">
+                    <h2 className="text-x1 font-medium text-brand-dark mb-4 flex items-center gap-2">
+                        <span></span> Encontre um local
+                    </h2>
+                    <BarraBusca 
+                    bairroSelecionado={bairroSelecionado}
+                    materialSelecionado={materialSelecionado}
+                    onSelectBairro={(bairroId) => {
+                        handleSelectBairro(bairroId);
+                    }}
+                    onSelectMaterial={(materialId) => {
+                        handleSelectMaterial(materialId);
+                    }}
+                    />
+                </section>
 
                 <div className="w-full max-w-4xl mx-auto px-4 my-6">
                     <h2 className="text-lg font-bold mb-3 text-custom-primary">Pontos de Coleta Encontrados</h2>

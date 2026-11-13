@@ -28,25 +28,30 @@ function BarraBusca({
         onSelectMaterial(selectedMaterialId);
     }
     return ( 
-    <div className="fieldset bg-base-100 border-base-300 rounded-box border w-[80%] h-[40%] ">
-        <label htmlFor="select-bairro">Selecione um bairro: </label>
-        <select id="select-bairro" className="select bg-custom-default w-[60%]" value={bairroSelecionado} onChange={handleBairroChange}>
-        <option value="">Todos os bairros</option>
-            {bairros.map((bairro) => (
-                <option key={bairro.id} value={bairro.id}>
-                    {bairro.nome}
-                </option>
-            ))}
-        </select>
-        <label htmlFor="select-material">Selecione um tipo de material:</label>
-         <select id="select-material" className="select bg-custom-default w-[60%]" value={materialSelecionado} onChange={handleMaterialChange}>
-            <option value="">Todos os materiais</option>
-                {materiaisData.map((material) => (
-                    <option key={material.id} value={material.id}>
-                        {material.titulo}
+
+    <div className="fieldset flex flex-row">
+        <div>
+            <label htmlFor="select-bairro">Selecione um bairro: </label>
+            <select id="select-bairro" className="select bg-custom-default w-[100%]" value={bairroSelecionado} onChange={handleBairroChange}>
+            <option value="">Todos os bairros</option>
+                {bairros.map((bairro) => (
+                    <option key={bairro.id} value={bairro.id}>
+                        {bairro.nome}
                     </option>
                 ))}
-        </select>
+            </select>
+        </div>
+        <div>
+            <label htmlFor="select-material">Selecione um tipo de material:</label>
+            <select id="select-material" className="select bg-custom-default w-[100%]" value={materialSelecionado} onChange={handleMaterialChange}>
+                <option value="">Todos os materiais</option>
+                    {materiaisData.map((material) => (
+                        <option key={material.id} value={material.id}>
+                            {material.titulo}
+                        </option>
+                    ))}
+            </select>
+        </div>
     </div>
     )
 }
